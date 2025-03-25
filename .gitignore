@@ -1,0 +1,19 @@
+# ⛔ Jangan push dependencies
+node_modules/
+
+# ⛔ Jangan push environment variables (keamanan!)
+.env
+
+# ⛔ Jangan push file hasil build
+dist/
+
+# ⛔ Jangan push cache & logs
+npm-debug.log
+yarn-error.log
+
+# ⛔ Jangan push database lokal Prisma
+prisma/.db/
+prisma/migrations/
+
+# ⛔ Jangan push TypeScript build cache
+*.tsbuildinfo
