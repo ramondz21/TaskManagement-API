@@ -28,15 +28,7 @@ Proyek ini juga mengimplementasikan **middleware logging, error handling, dan ra
 
 ## 🛠️ Teknologi yang Digunakan
 
+- **Node.js** → Javascript Runtime
 - **Express.js** → Framework backend.
-- **Winston/Pino** → Logging request.
-- **Express Middleware** → Buat middleware sendiri untuk logging, error, dan rate limit.
-
-## 🔧 Cara Menjalankan Proyek
-
-### **1️⃣ Clone Repository**
-
-```sh
-git clone https://github.com/username/task-api.git
-cd task-api
-```
+- **Prisma** → ORM
+- **PostgreSQL** → ORDBMS
