@@ -19,6 +19,10 @@
 | `PUT`      | `/tasks/:id` | Update task       |
 | `DELETE`   | `/tasks/:id` | Hapus task        |
 
+| `POST` | `/register` | Register User |
+| `POST` | `/login` | Login User |
+| `POST` | `/refresh-token` | Renew-Token |
+
 ---
 
 ## 🛠️ Teknologi yang Digunakan
