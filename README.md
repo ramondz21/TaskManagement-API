@@ -4,7 +4,8 @@
 
 ## 📌 Fitur Utama
 
-✅ **CRUD Task** → Buat, baca, update, dan hapus task.
+✅ **CRUD Task**
+✅ **Authentication**
 
 ---
 
