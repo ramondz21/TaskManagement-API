@@ -8,13 +8,14 @@ import {
 } from "../controllers/taskController";
 import { taskSchema } from "../validation/taskValidation";
 import validate from "../middleware/validate";
+import authMiddleware from '../middleware/authMiddleware'
 
 const router: Router = Router();
 
-router.post("/tasks", validate(taskSchema), addTask);
-router.get("/tasks", getTasks);
-router.get("/tasks/:taskId", getTaskById);
-router.put("/tasks/:taskId", validate(taskSchema), editTaskById);
-router.delete("/tasks/:taskId", deleteTaskById);
+router.post("/tasks", authMiddleware, validate(taskSchema), addTask);
+router.get("/tasks", authMiddleware, getTasks);
+router.get("/tasks/:taskId", authMiddleware, getTaskById);
+router.put("/tasks/:taskId", authMiddleware, validate(taskSchema), editTaskById);
+router.delete("/tasks/:taskId", authMiddleware, deleteTaskById);
 
 export default router;
